@@ -11,10 +11,11 @@ public class EnquiryServiceImpl implements EnquiryService
 {
  @Autowired private EnquiryRepository enquiryRepository;
 	@Override
+	
 	public EnquiryDetalis saveEnquiryDetails(EnquiryDetalis ed) {
 		
-		//return enquiryRepository.save(ed);
-		return null;
+		return enquiryRepository.save(ed);
+		//return null;
 	}
 
 }

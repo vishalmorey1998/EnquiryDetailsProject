@@ -18,6 +18,9 @@ public class EnquiryController {
 	public ResponseEntity<EnquiryDetalis> savaDetails(@RequestBody EnquiryDetalis ed)
 	{
 		EnquiryDetalis enquiry = enquiryService.saveEnquiryDetails(ed);
+		
+		
+		
 		return new ResponseEntity<EnquiryDetalis>(enquiry,HttpStatus.CREATED);
 		
 	}
