@@ -14,8 +14,8 @@ public class EnquiryServiceImpl implements EnquiryService
 	
 	public EnquiryDetalis saveEnquiryDetails(EnquiryDetalis ed) {
 		
-		//return enquiryRepository.save(ed);
-		return null;
+		return enquiryRepository.save(ed);
+		//return null;
 	}
 
 }
